@@ -8,7 +8,6 @@ README
 dist.ini
 eg/mvp.ini
 lib/Config/MVP/Reader/INI.pm
-t/01-Config-INI-MVP.t
 t/lib/Foo/Bar.pm
 t/lib/Foo/Baz.pm
 t/lib/Foo/Quux.pm

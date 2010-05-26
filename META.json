@@ -36,7 +36,7 @@
          "url" : "git://git.codesimply.com/Config-INI-MVP.git"
       }
    },
-   "version" : "1.101450",
+   "version" : "1.101460",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

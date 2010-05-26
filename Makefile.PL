@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'Config::MVP::Reader::Findable::ByExtension' => '0',
     'Moose' => '0'
   },
-  'VERSION' => '1.101450',
+  'VERSION' => '1.101460',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,6 +1,6 @@
 package Config::MVP::Reader::INI;
 BEGIN {
-  $Config::MVP::Reader::INI::VERSION = '1.101450';
+  $Config::MVP::Reader::INI::VERSION = '1.101460';
 }
 use Moose;
 with 'Config::MVP::Reader::Findable::ByExtension';
@@ -26,7 +26,7 @@ sub read_into_assembler {
   package
    Config::MVP::Reader::INI::INIReader;
 BEGIN {
-  $Config::MVP::Reader::INI::INIReader::VERSION = '1.101450';
+  $Config::MVP::Reader::INI::INIReader::VERSION = '1.101460';
 }
   use base 'Config::INI::Reader';
 
@@ -86,7 +86,7 @@ Config::MVP::Reader::INI - an MVP config reader for .ini files
 
 =head1 VERSION
 
-version 1.101450
+version 1.101460
 
 =head1 DESCRIPTION
 
