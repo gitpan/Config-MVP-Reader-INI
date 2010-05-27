@@ -23,11 +23,12 @@ my %WriteMakefileArgs = (
   'NAME' => 'Config::MVP::Reader::INI',
   'PREREQ_PM' => {
     'Config::INI::Reader' => '0',
-    'Config::MVP' => '0.101440',
+    'Config::MVP' => '2',
+    'Config::MVP::Reader' => '0',
     'Config::MVP::Reader::Findable::ByExtension' => '0',
     'Moose' => '0'
   },
-  'VERSION' => '1.101460',
+  'VERSION' => '2.101460',
   'test' => {
     'TESTS' => 't/*.t'
   }
