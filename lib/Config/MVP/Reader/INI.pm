@@ -1,6 +1,6 @@
 package Config::MVP::Reader::INI;
 BEGIN {
-  $Config::MVP::Reader::INI::VERSION = '2.101460';
+  $Config::MVP::Reader::INI::VERSION = '2.101461';
 }
 use Moose;
 extends 'Config::MVP::Reader';
@@ -26,9 +26,6 @@ sub read_into_assembler {
 {
   package
    Config::MVP::Reader::INI::INIReader;
-BEGIN {
-  $Config::MVP::Reader::INI::INIReader::VERSION = '2.101460';
-}
   use base 'Config::INI::Reader';
 
   sub new {
@@ -43,7 +40,7 @@ BEGIN {
   sub change_section {
     my ($self, $section) = @_;
 
-    my ($package, $name) = $section =~ m{\A\s*(?:([^/\s]+)\s*/\s*)?(\S+)\z};
+    my ($package, $name) = $section =~ m{\A\s*(?:([^/\s]+)\s*/\s*)?(.+)\z};
     $package = $name unless defined $package and length $package;
 
     Carp::croak qq{couldn't understand section header: "$_[1]"}
@@ -87,7 +84,7 @@ Config::MVP::Reader::INI - an MVP config reader for .ini files
 
 =head1 VERSION
 
-version 2.101460
+version 2.101461
 
 =head1 DESCRIPTION
 
@@ -96,7 +93,7 @@ configuration.
 
 =head1 AUTHOR
 
-  Ricardo Signes <rjbs@cpan.org>
+Ricardo Signes <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
