@@ -1,6 +1,6 @@
 package Config::MVP::Reader::INI;
-BEGIN {
-  $Config::MVP::Reader::INI::VERSION = '2.101461';
+{
+  $Config::MVP::Reader::INI::VERSION = '2.101462';
 }
 use Moose;
 extends 'Config::MVP::Reader';
@@ -76,6 +76,7 @@ __PACKAGE__->meta->make_immutable;
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -84,7 +85,7 @@ Config::MVP::Reader::INI - an MVP config reader for .ini files
 
 =head1 VERSION
 
-version 2.101461
+version 2.101462
 
 =head1 DESCRIPTION
 
@@ -103,4 +104,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
