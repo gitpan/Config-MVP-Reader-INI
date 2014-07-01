@@ -1,14 +1,18 @@
 package Config::MVP::Reader::INI;
-{
-  $Config::MVP::Reader::INI::VERSION = '2.101462';
-}
+# ABSTRACT: an MVP config reader for .ini files
+$Config::MVP::Reader::INI::VERSION = '2.101463';
 use Moose;
 extends 'Config::MVP::Reader';
 with 'Config::MVP::Reader::Findable::ByExtension';
-# ABSTRACT: an MVP config reader for .ini files
 
 use Config::MVP 2; # Reader is a base class
 
+#pod =head1 DESCRIPTION
+#pod
+#pod Config::MVP::Reader::INI reads F<.ini> files containing MVP-style
+#pod configuration.
+#pod
+#pod =cut
 
 # Clearly this should be an attribute with a builder blah blah blah. -- rjbs,
 # 2009-07-25
@@ -26,7 +30,7 @@ sub read_into_assembler {
 {
   package
    Config::MVP::Reader::INI::INIReader;
-  use base 'Config::INI::Reader';
+  use parent 'Config::INI::Reader';
 
   sub new {
     my ($class, $assembler) = @_;
@@ -79,13 +83,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Config::MVP::Reader::INI - an MVP config reader for .ini files
 
 =head1 VERSION
 
-version 2.101462
+version 2.101463
 
 =head1 DESCRIPTION
 
